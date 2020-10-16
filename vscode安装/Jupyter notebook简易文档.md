@@ -1,10 +1,44 @@
+# Jupyter-notebook安装文档v1.0
+
+​																																	*李明理  2020 年 10 月 16 日*
 
 
-## 1.Python 下载与安装
 
-Python 2.7的终止日期最初定为2015年，由于担心大量现有代码无法轻易地移植到Python 3而推迟到2020年，Python3.X在库的名称上也有所改变，所以建议安装Python3.X版本。这里以win7 64位笔记本为例：
+[TOC]
 
-**1.1官网下载**
+
+
+## 1. 环境说明
+
+工欲善其事必先利其器。学习高大的AI大法，安好工具、熟悉常用技能很有必要的
+
+##### 1.1 电脑环境：
+64位win7 + intel i5 + 8G RAM 
+
+##### 1.2 相关软件版本
+
+python 3.8.6 amd64
+
+visual studio code x64 1.49.3
+
+jupyter-notebook 6.1.4
+
+以上软件均为当前（截至2020年10月6日）最新版本，python 与vscode安装包也可以在下面链接下载
+
+链接：https://pan.baidu.com/s/1O46nueaSsdaNFiMWt5V8Ng 
+提取码：smqb
+
+jupyter-notebook 直接通过命令行安装，不需要安装包
+
+**小技巧**：1.[哔哩哔哩](http://www.bilibli.com)上有许多软件安装以及学习较详细的视频，值得学习
+
+​                2.机器学习安装软件也可以通过anaconda安装(详情可以见上一条！！！)
+
+## 2. Python 下载与安装
+
+Python 2.7的终止日期最初定为2015年，由于担心大量现有代码无法轻易地移植到Python 3而推迟到2020年，Python3.X在库的名称上也有所改变，所以建议安装Python3.X版本。
+
+##### 2.1 官网下载
 
 [python官网地址](https://www.python.org/downloads/windows/)
 
@@ -16,11 +50,13 @@ Python 2.7的终止日期最初定为2015年，由于担心大量现有代码无
 
 ![](images/python0.png)
 
-滑动滚动条，找到如下图箭头所示
+滑动滚动条，找到如下图箭头所示，点击即可下载
 
 ![](images/win64download.png)
 
-下载安装包后直接以管理员身份运行（注意勾选图中箭头所示选项！！！）
+##### 2.2 python本地安装
+
+直接双击安装包以管理员身份运行（注意勾选图中箭头所示选项！！！）
 
 ![](images/python3.png)
 
@@ -32,9 +68,9 @@ Python 2.7的终止日期最初定为2015年，由于担心大量现有代码无
 
 ![](images/cmd-python.png)
 
-## 2.配置python pip国内源
+## 3. 配置python pip国内源
 
-2.1新建 pip 配置文件夹，直接在user用户目录中创建一个名为 pip 的文件夹( 即%HOMEPATH%\pip)，如下图所示：
+新建 pip 配置文件夹，直接在user用户目录中创建一个名为 pip 的文件夹( 即%HOMEPATH%\pip)，如下图所示：
 ![](images/pip1.png)
 
 接着在 pip 文件夹中创建一个名为 pip 的文本文件(后缀名由" .txt "改为 " .ini ")，格式如上图所示：
@@ -48,17 +84,19 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host = https://pypi.tuna.tsinghua.edu.cn
 ```
 
-修改完成后**保存**，启动cmd，使用 " pip install xxx "(xxx为你要下载的包名，比如 pip install numpy)，即可默认使用国内源下载。
+修改完成后**保存**，启动 cmd，使用 " pip install xxx "(xxx为你要下载的包名，比如 pip install numpy)，即可默认使用国内源下载。
 
-## 3.Visual Studio code(VS code)下载与安装
+## 4. Visual Studio code(VS code)下载与安装
 
-官网下载
+##### 4.1 官网下载
 
 [VS code官方网址](https://code.visualstudio.com/Download)
 
-选择**System Installer**版本下载，如下图所示
+选择**System Installer**版本双击下载即可，如下图所示
 
 ![](images/0.png)
+
+##### 4.2 VS code 安装 
 
 安装包下载后右键以管理员身份运行
 
@@ -76,7 +114,7 @@ trusted-host = https://pypi.tuna.tsinghua.edu.cn
 
 ![](images/6.png)
 
-## 4.VS code 简单配置与简单使用
+## 5.VS code 简单配置与使用
 
 首先打开VSCode软件，可以看到刚刚安装的VSCode软件默认使用的是英文语言环境，如下图：
 
@@ -110,15 +148,41 @@ print("python")
 
 ![](images/vs_7.png)
 
-## 5.Jupyter notebook安装
+## 6. Jupyter-notebook 安装
 
 在上图demo目录（目录下有hello.py Untitled-1.py 等文件）下打开cmd，命令行输入
 
-**pip install jupyter** 即可安装jupyter notebook
+**pip install jupyter** 即可安装jupyter-notebook
 
-等一会儿，直接在命令行输入**jupyter notebook**
+cmd 命令行输入**jupyter --version**即可查看jupyter-notebook版本
+
+安装完成后，直接在命令行输入**jupyter notebook**即可启动
 
 笔记本默认浏览器就会自动打开页面
 
 ![](images/jupyter1.png)
 
+## 7. Jupyter-notebook 简单使用
+
+如下图所示，点击new, 选择python3,就会创建文件Untitled.ipynb，并且打开一个页面，在页面中即可编辑代码，并且实时运行
+
+![](images/jupyter2.png)
+
+![](images/jupyter3.png)
+
+魔法命令 %run           **注意hello.py文件的相对目录，这里通过%run 调用hello.py中的函数**
+
+![](images/jupyter4.png)
+
+hello.py 的代码如下图所示
+
+![](images/jupyter5.png)
+
+部分用户可能需要用到模块（模块代码可以在链接：https://pan.baidu.com/s/1O46nueaSsdaNFiMWt5V8Ng 
+提取码：smqb  下载），也会上传到码云上
+
+![](images/jupyter6.png)
+
+![](images/jupyter7.png)
+
+​                                                                                                                                                        
