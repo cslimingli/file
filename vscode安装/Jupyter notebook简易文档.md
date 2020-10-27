@@ -86,7 +86,7 @@ trusted-host = https://pypi.tuna.tsinghua.edu.cn
 
 修改完成后**保存**，启动 cmd，使用 " pip install xxx "(xxx为你要下载的包名，比如 pip install numpy)，即可默认使用国内源下载。
 
-## 4. Visual Studio code(VS code)下载与安装
+## 4. Visual Studio Code(VS Code)下载与安装
 
 ##### 4.1 官网下载
 
@@ -96,7 +96,7 @@ trusted-host = https://pypi.tuna.tsinghua.edu.cn
 
 ![](images/0.png)
 
-##### 4.2 VS code 安装 
+##### 4.2 VS Code 安装 
 
 安装包下载后右键以管理员身份运行
 
@@ -114,7 +114,7 @@ trusted-host = https://pypi.tuna.tsinghua.edu.cn
 
 ![](images/6.png)
 
-## 5.VS code 简单配置与使用
+## 5.VS Code 简单配置与使用
 
 首先打开VSCode软件，可以看到刚刚安装的VSCode软件默认使用的是英文语言环境，如下图：
 
@@ -185,4 +185,25 @@ hello.py 的代码如下图所示
 
 ![](images/jupyter7.png)
 
-​                                                                                                                                                        
+                          ## 8.VS Code中使用Jupyter Notebook
+
+在扩展商店中安装官方的Python扩展包   
+
+![vscode-jupyter1](images/vscode-jupyter1.png)
+
+在VS Code中创建创建一个.ipynb的文件
+
+Ctrl+Shift+P输入 Create Jupyter，然后创建即可
+
+​      ![](images/vscode-jupyter2.png)             
+
+然后就进到Jupyter中了
+
+​         ![](images/vscode-jupyter3.png)   
+
+​                                                                 
+
+![](images/vscode-jupyter4.png)
+
+后面的使用方法就跟网页中的操作差不多了，编辑代码后**注意保存**
+
