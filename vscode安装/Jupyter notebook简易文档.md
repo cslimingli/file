@@ -185,7 +185,7 @@ hello.py 的代码如下图所示
 
 ![](images/jupyter7.png)
 
-                          ## 8.VS Code中使用Jupyter Notebook
+## 8.VS Code中使用Jupyter Notebook
 
 在扩展商店中安装官方的Python扩展包   
 
